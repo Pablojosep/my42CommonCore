@@ -1,0 +1,21 @@
+# Objetos y librerías C
+*.o
+*.a
+*.so
+
+# Ejecutables
+a.out
+*.exe
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# macOS
+.DS_Store
+
+# Build
+build/
+*.dSYM/

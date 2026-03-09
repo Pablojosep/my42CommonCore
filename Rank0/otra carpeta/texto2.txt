@@ -1,0 +1,8 @@
+"Mu
+el
+
+ta
+Mas
+
+
+gcc main.c get_next_line.a -g &&  gdb -tui ./a.out   
