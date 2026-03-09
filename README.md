@@ -1,35 +1,35 @@
 # Common Core
 
-Repositorio con mis proyectos del **Common Core** (42). Aquí está la libft, printf y get_next_line que fui haciendo — en algunas carpetas hay más de una versión porque fui iterando hasta que pasaba los tests.
+Repository with my **Common Core** (42) projects. Libft, printf, and get_next_line — some folders have more than one version because I kept iterating until everything passed the tests.
 
-## Qué hay dentro
+## What's in here
 
-- **libft** — Reimplementación en C de funciones de la libc (strings, memoria, listas enlazadas). Es la base que usas en el resto del curriculum.
-- **ft_printf** — Versión propia de `printf` con los formatos que pide el proyecto.
-- **get_next_line** — Lectura línea a línea de un fd (archivo, stdin, etc.) con buffer configurable.
+- **libft** — C reimplementation of libc functions (strings, memory, linked lists). It's the base you use for the rest of the curriculum.
+- **ft_printf** — My own version of `printf` with the formats required by the project.
+- **get_next_line** — Read a file descriptor (file, stdin, etc.) line by line with a configurable buffer.
 
-Todo está en C puro, compilado con `-Wall -Wextra -Werror`.
+All plain C, compiled with `-Wall -Wextra -Werror`.
 
-## Cómo compilar
+## How to build
 
-Cada proyecto tiene su propio `Makefile`. Por ejemplo, para libft (la versión que uso como referencia es la de `libft_0`):
+Each project has its own `Makefile`. For libft (the version I use as reference is `libft_0`):
 
 ```bash
 cd Rank0/libft/libft_0
 make
 ```
 
-Genera `libft.a`. Para printf y get_next_line, entra en la carpeta del proyecto que quieras y `make` igual.
+That produces `libft.a`. For printf and get_next_line, just `cd` into the project folder and run `make` the same way.
 
-## Estructura
+## Structure
 
 ```
 Rank0/
-├── libft/       # varias versiones (libft_0 es la que mantengo)
+├── libft/       # several versions (libft_0 is the one I keep)
 ├── printf/
 └── get_next_line/
 ```
 
 ---
 
-Si algo no compila o quieres usar una versión concreta, revisa el `Makefile` de esa carpeta; a veces la ruta del `include` o el nombre del header cambia entre versiones.
+If something doesn't build or you want to use a specific version, check that folder's `Makefile` — the include path or header name sometimes changes between versions.
